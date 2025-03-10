@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Promedio_edades {
+public class Ejrc_1_Promedio_edades {
     public static void main (String[] args){
 
         int edad1, edad2, edad3;

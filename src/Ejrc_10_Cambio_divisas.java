@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Cambio_divisas {
+public class Ejrc_10_Cambio_divisas {
     public static void main(String[] args){
         Scanner teclado = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("#.00");

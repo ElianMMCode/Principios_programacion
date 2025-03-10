@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Laminas_hierro {
+public class Ejrc_16_Laminas_hierro {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);

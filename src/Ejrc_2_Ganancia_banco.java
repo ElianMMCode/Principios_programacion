@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ganancia_banco {
+public class Ejrc_2_Ganancia_banco {
     public static void main(String[] args) {
 
 

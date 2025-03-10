@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Factura_energia {
+public class Ejrc_15_Factura_energia {
     public static void main(String[] args){
 
         int ant_lectura;

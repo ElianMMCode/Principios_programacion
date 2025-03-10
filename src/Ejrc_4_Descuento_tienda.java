@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Descuento_tienda {
+public class Ejrc_4_Descuento_tienda {
 
     public static void main(String[] args) {
 

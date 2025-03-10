@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ecuacion_lineal {
+public class Ejrc_14_Ecuacion_lineal {
     public static void main(String[] args){
 
         float c, e, b, f, a, d;

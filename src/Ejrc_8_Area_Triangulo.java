@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Area_Triangulo {
+public class Ejrc_8_Area_Triangulo {
     public static void main(String[] args){
 
         Scanner teclado = new Scanner(System.in);

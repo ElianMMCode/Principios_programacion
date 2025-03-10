@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Dinero_banco {
+public class Ejrc_13_Dinero_banco {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
             int ncincuentamil;

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Calificacion_final {
+public class Ejrc_5_Calificacion_final {
 
     public static void main(String[] args){
 
@@ -8,7 +8,6 @@ public class Calificacion_final {
         double[] calificacion = new double [3];
         double promedio=0;
         double calificacion_parcial;
-        double examen_final;
         double trabajo_final;
 
         System.out.println("Calificaciones parciales");
@@ -23,14 +22,14 @@ public class Calificacion_final {
         System.out.println("Examen final");
         System.out.println("------------------------");
         System.out.println("Ingrese la calificacion de su examen final");
-        examen_final= (double) (teclado.nextDouble()*0.30);
+        double examen_final = (teclado.nextDouble() * 0.30);
         System.out.println(examen_final);
 
 
         System.out.println("Trabajo final");
         System.out.println("------------------------");
         System.out.println("Ingrese la calificacion de su trabajo final");
-        trabajo_final= (double) (teclado.nextDouble()*0.15);
+        trabajo_final=(teclado.nextDouble()*0.15);
         System.out.println(trabajo_final);
 
         //Calculo notas
@@ -38,7 +37,7 @@ public class Calificacion_final {
         for(int i = 0; 3 > i; i++){
              promedio=promedio+calificacion[i];
         }
-        calificacion_parcial= (double) (((double) promedio /3)*0.55);
+        calificacion_parcial=(promedio /3)*0.55;
 
         double nota_final = (calificacion_parcial+examen_final+trabajo_final);
 

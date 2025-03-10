@@ -1,7 +1,6 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class Promedio_tres_materias {
+public class Ejrc_12_Promedio_tres_materias {
 
     public static void main(String[] args){
 

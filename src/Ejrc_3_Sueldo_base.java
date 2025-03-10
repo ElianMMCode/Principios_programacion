@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Sueldo_base {
+public class Ejrc_3_Sueldo_base {
     public static void main(String[] args) {
 
 

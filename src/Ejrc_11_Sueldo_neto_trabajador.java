@@ -1,7 +1,6 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class Sueldo_neto_trabajador {
+public class Ejrc_11_Sueldo_neto_trabajador {
     public static void main(String[] args){
 
         Scanner teclado = new Scanner(System.in);

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Porcentaje_estudiantes {
+public class Ejrc_6_Porcentaje_estudiantes {
 
     public static void main(String[] args){
 
