@@ -1,3 +1,5 @@
+package Ejercicios_Principios;
+
 import java.util.Scanner;
 
 public class Ejrc_14_Ecuacion_lineal {

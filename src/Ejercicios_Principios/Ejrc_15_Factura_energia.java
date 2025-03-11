@@ -1,3 +1,5 @@
+package Ejercicios_Principios;
+
 import java.util.Scanner;
 
 public class Ejrc_15_Factura_energia {
