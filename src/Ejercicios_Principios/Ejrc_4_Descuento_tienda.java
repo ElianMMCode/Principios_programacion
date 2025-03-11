@@ -1,5 +1,6 @@
 package Ejercicios_Principios;
-
+/*4. Una tienda ofrece un descuento del 15% sobre el total de la compra y un cliente desea saber cuánto
+deberá pagar finalmente por su compra.*/
 import java.util.Scanner;
 
 public class Ejrc_4_Descuento_tienda {

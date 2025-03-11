@@ -1,5 +1,6 @@
 package Ejercicios_Principios;
-
+/*9. Calcular el salario neto de un trabajador en función del número de horas trabajadas, el precio de la
+hora y considerando un descuento fijo al sueldo base por concepto de impuestos del 20%.*/
 import java.util.Scanner;
 
 public class Ejrc_9_Sueldo_neto {

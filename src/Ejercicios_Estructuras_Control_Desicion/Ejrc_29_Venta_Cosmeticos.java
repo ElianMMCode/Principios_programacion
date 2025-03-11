@@ -1,5 +1,12 @@
 package Ejercicios_Estructuras_Control_Desicion;
-
+/*
+29. Una empresa que comercializa cosméticos tiene organizados a sus vendedores en tres
+departamentos y ha establecido un programa de incentivos para incrementar su productividad. El
+gerente, al final del mes, pide el importe global de las ventas de los tres departamentos y aquellos
+que excedan el 33% de las ventas totales se les paga una cantidad extra equivalente al 20% de su
+salario mensual. Si todos los vendedores ganan lo mismo, determinar cuánto recibirán los
+vendedores de los tres departamentos al finalizar el mes.
+*/
 import java.util.Scanner;
 
 public class Ejrc_29_Venta_Cosmeticos {

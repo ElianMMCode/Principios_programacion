@@ -1,5 +1,12 @@
 package Ejercicios_Principios;
-
+/*14. El siguiente sistema de ecuaciones lineales:
+aX + bY = c
+dX + eY = f
+se resuelve con las fórmulas:
+     ce - bf       af - cd
+X = --------- Y = --------- calcule y muestre el valor de X e Y.
+     ae – bd       ae – bd
+*/
 import java.util.Scanner;
 
 public class Ejrc_14_Ecuacion_lineal {

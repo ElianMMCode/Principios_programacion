@@ -1,5 +1,5 @@
 package Ejercicios_Principios;
-
+//Obtener el promedio de edad de tres personas.
 import java.util.Scanner;
 
 public class Ejrc_1_Promedio_edades {

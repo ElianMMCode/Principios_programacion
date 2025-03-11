@@ -1,5 +1,6 @@
 package Ejercicios_Principios;
-
+/*6. Un maestro desea saber qué porcentaje de hombres y qué porcentaje de mujeres hay en un grupo
+de estudiantes.*/
 import java.util.Scanner;
 
 public class Ejrc_6_Porcentaje_estudiantes {
