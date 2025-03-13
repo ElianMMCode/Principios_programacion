@@ -28,16 +28,16 @@ public static void main(String[] args){
 
     if (hipoteca <1000000){
         inversion = inversion_total *0.5;
-        socio = inversion *0.5;
+        socio = inversion_total *0.5;
 
-        System.out.println("La inversion suya sera de"+inversion);
-        System.out.println("La inversion del socio debera ser "+socio);
+        System.out.printf("La inversion suya sera de %.0f\n",inversion);
+        System.out.printf("La inversion del socio debera ser %.0f\n",socio);
     }else if(hipoteca >=1000000){
         double faltante = inversion_total-hipoteca;
         inversion=hipoteca+(faltante/2);
         socio=faltante/2;
-        System.out.println("La inversion suya sera de"+inversion);
-        System.out.println("La inversion del socio debera ser "+socio);
+        System.out.printf("La inversion suya sera de %.0f\n",inversion);
+        System.out.printf("La inversion del socio debera ser %.0f\n",socio);
     }
 }
 }
