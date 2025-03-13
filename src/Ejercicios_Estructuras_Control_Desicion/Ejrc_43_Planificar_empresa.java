@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 El dueño de una empresa desea planificar las decisiones financieras que tomará en el siguiente
 año. La manera de planificarlas depende de lo siguiente: Si actualmente su capital se encuentra
-con saldo negativo, pedirá un préstamo bancario para que su nuevo saldo sea de $10000. si su
+con saldo negativo, pedirá un préstamo bancario para que su nuevo saldo sea de $10000. Si su
 capital tiene actualmente un saldo positivo pedirá un préstamo bancario para tener un nuevo saldo
 de $20000, pero si su capital tiene actualmente un saldo superior a los $20000 no pedirá ningún
 préstamo.
@@ -23,13 +23,29 @@ public class Ejrc_43_Planificar_empresa {
         System.out.println("Ingrese el monto del capital actual");
         double cpt = t.nextDouble();
 
-        //double prestamo;
+        double prestamo = cpt;
 
-        //if(capital<0){
-        //    prestamo = cpt+1000;
-        //}
-        double prestamo = cpt<0 ? cpt+1000 : 2000-cpt;
-        System.out.println(prestamo);
+
+
+        System.out.println();
+        if(cpt<0){
+            prestamo = cpt+10000;
+            System.out.println("El préstamo sera de "+prestamo);
+        }else if (cpt<20000){
+            prestamo = 20000 - cpt;
+            System.out.println("El préstamo sera de "+prestamo);
+        }else if (cpt>=20000){
+            System.out.println("No requiere un préstamo");
+        }
+        //Repartición del préstamo
+        //if (cpt)
+        double eqp_compu=5000;
+        double mobiliario=2000;
+        double insumos=(prestamo-eqp_compu-mobiliario)/2;
+        double incentivos=(prestamo-eqp_compu-mobiliario)/2;
+        System.out.println("Los insumos saran de "+insumos);
+        System.out.println("Los incentivos saran de "+incentivos);
+
 
     }
 }
