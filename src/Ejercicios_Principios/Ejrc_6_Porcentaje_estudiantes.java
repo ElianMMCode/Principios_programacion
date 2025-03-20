@@ -25,8 +25,8 @@ public class Ejrc_6_Porcentaje_estudiantes {
         if(estudiantes==mujeres+hombres) {
             //Calculo porcentaje de estudiantes
 
-            int porcentaje_mujeres = mujeres * (estudiantes / 100);
-            int porcentaje_hombres = hombres * (estudiantes / 100);
+            double porcentaje_mujeres = (double) mujeres /estudiantes* 100;
+            double porcentaje_hombres = (double) hombres /estudiantes* 100;
 
             System.out.println("El porcentaje de mujeres en el curso es de " + porcentaje_mujeres);
             System.out.println("El porcentaje de mujeres en el curso es de " + porcentaje_hombres);
