@@ -57,6 +57,9 @@ public class Menu {
         double descuento=sueldo*0.20;
         return (sueldo-descuento);
     }
+    public static double ejercicio10 (double cambio, double moneda){
+        return(cambio*moneda);
+    }
 
 
 
@@ -215,7 +218,137 @@ public class Menu {
                     System.out.println("El sueldo neto del empleado es de "+ejercicio9(precio_hora,horas));
                     break;
                 case 10:
+                    DecimalFormat df = new DecimalFormat("#.00");
+                    //divisas a 1 peseta
+                    double pesetas=1;
+                    double ch_austriacos=0.0010450729513173667;
+                    double dolar=0.008163331945566904;
+                    double drac_griegos=0.011285790061733272;
+                    double fr_belga=0.003089012998566698;
+                    double fr_francesa=0.04972650422675286;
+                    double lb_esterlina=0.005588527869988488;
+                    double lb_italiana=0.10765421466250404;
+                    double moneda= 0;
 
+                    //Seleccion de divisas a cambiar
+
+                    System.out.println("Cambio de divisas");
+                    System.out.println("=================");
+                    System.out.println("Ingrese el monto a realizar el cambio");
+                    double monto = t.nextDouble();
+
+                    System.out.println("Ingrese con un numero el tipo de moneda");
+                    System.out.println("Peseta(1)");
+                    System.out.println("Chelin austriaco(2)");
+                    System.out.println("Dolar(3)");
+                    System.out.println("Dracma(4)");
+                    System.out.println("Franco Belga(5)");
+                    System.out.println("Franco Frances(6)");
+                    System.out.println("Libra Esterlina(7)");
+                    System.out.println("Libra Italiana(8)");
+
+                    teclado=new Scanner(System.in);
+                    int opcion= (t.nextInt()-1);
+
+                    //Moneda1
+                    switch (opcion) {
+                        case 0:
+                            moneda=pesetas;
+                            break;
+                        case 1:
+                            moneda= ch_austriacos;
+                            break;
+                        case 2:
+                            moneda= dolar;
+                            break;
+                        case 3:
+                            moneda= drac_griegos;
+                            break;
+                        case 4:
+                            moneda= fr_belga;
+                            break;
+                        case 5:
+                            moneda= fr_francesa;
+                            break;
+                        case 6:
+                            moneda= lb_esterlina;
+                            break;
+                        case 7:
+                            moneda= lb_italiana;
+                            break;
+                        default:
+                            System.out.println("Valor ingresado incorrecto");
+                            break;
+                    }
+                    if (opcion>=0&&opcion<=7) {
+                        //Monto a pesetas
+                        System.out.println(moneda);
+                        double cambio = monto / moneda;
+
+
+
+                        //Seleccion de divisas a cambiar
+                        System.out.println("Ingrese con un numero la moneda a la cual quiere hacer el cambio");
+                        System.out.println("Peseta(1)");
+                        System.out.println("Chelin austriaco(2)");
+                        System.out.println("Dolar(3)");
+                        System.out.println("Dracma(4)");
+                        System.out.println("Franco Belga(5)");
+                        System.out.println("Franco Frances(6)");
+                        System.out.println("Libra Esterlina(7)");
+                        System.out.println("Libra Italiana(8)");
+                        opcion= (t.nextInt()-1);
+
+                        switch (opcion) {
+                            case 0:
+                                moneda=pesetas;
+                                System.out.println(moneda);
+                                System.out.println("==============================");
+                                System.out.println("El cambio es "+df.format(ejercicio10(cambio,moneda))+" pesetas");
+                                break;
+                            case 1:
+                                moneda= ch_austriacos;
+                                System.out.println(moneda);
+                                System.out.println(monto);
+
+                                System.out.println("==============================");
+                                System.out.println("El cambio es "+df.format(ejercicio10(cambio,moneda))+" chelines austriacos");
+                                break;
+                            case 2:
+                                moneda= dolar;
+                                System.out.println("==============================");
+                                System.out.println("El cambio es "+df.format(ejercicio10(cambio,moneda))+" dolares");
+                                break;
+                            case 3:
+                                moneda= drac_griegos;
+                                System.out.println("==============================");
+                                System.out.println("El cambio es "+df.format(ejercicio10(cambio,moneda))+" dracmas");
+                                break;
+                            case 4:
+                                moneda= fr_belga;
+                                System.out.println("==============================");
+                                System.out.println("El cambio es "+df.format(ejercicio10(cambio,moneda))+" francos belgas");
+                                break;
+                            case 5:
+                                moneda= fr_francesa;
+                                System.out.println("==============================");
+                                System.out.println("El cambio es "+df.format(ejercicio10(cambio,moneda))+" francos franceses");
+                                break;
+                            case 6:
+                                moneda= lb_esterlina;
+                                System.out.println("==============================");
+                                System.out.println("El cambio es "+df.format(ejercicio10(cambio,moneda))+" libras esterlinas");
+                                break;
+                            case 7:
+                                moneda= lb_italiana;
+                                System.out.println("==============================");
+                                System.out.println("El cambio es "+df.format(ejercicio10(cambio,moneda))+" libra italiana");
+                                break;
+                            default:
+                                System.out.println("Valor ingresado incorrecto");
+                        }
+
+                    }
                 break;
                 default:
                     System.out.println("Ejercicio no valido");
