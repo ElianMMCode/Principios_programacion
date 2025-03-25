@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ejercicios {
 
-    public void Ejercicio1(){
+    private void Ejercicio1(){
         int edad1, edad2, edad3;
 
         Scanner teclado=new Scanner (System.in);
@@ -17,15 +17,14 @@ public class Ejercicios {
         System.out.println("Ingrese una edad");
         edad3=teclado.nextInt();
         //Promedio edades
-
-        int promedio= (edad1+edad2+edad3)/3;
+        int promedio = (edad1 + edad2 + edad3) / 3;
 
 
         //Mostrar promedio
 
         System.out.println("El promedio de las edades "+edad1+" ,"+edad2+" ,"+edad3+" "+"es igual a "+promedio);
     }
-    public void Ejercicio2(){
+    private void Ejercicio2(){
         int inversion;
         Scanner teclado = new Scanner(System.in);
 
@@ -42,7 +41,8 @@ public class Ejercicios {
 
         System.out.println("Las ganancias del mes fueron "+ganancia);
     }
-    public void Ejercicio3(){
+
+    private void Ejercicio3(){
         Scanner teclado = new Scanner(System.in);
         double sueldo;
         int ventas;
@@ -69,7 +69,7 @@ public class Ejercicios {
         System.out.println("Su sueldo total fue de "+total_sueldo);
 
     }
-    public void Ejercicio4(){
+    private void Ejercicio4(){
         int precio_compras;
 
         Scanner teclado = new Scanner(System.in);
@@ -85,7 +85,7 @@ public class Ejercicios {
         //Mostrar total
 
         System.out.println("El total de las compras con descuento es de "+total);}
-    public void Ejercicio5(){
+    private void Ejercicio5(){
         Scanner teclado = new Scanner(System.in);
         double[] calificacion = new double [3];
         double promedio=0;
@@ -128,7 +128,7 @@ public class Ejercicios {
         System.out.println("-------------------------");
         System.out.println("Su NOTA FINAL fue de "+nota_final);
     }
-    public void Ejercicio6(){
+    private void Ejercicio6(){
         Scanner teclado= new Scanner(System.in);
         int estudiantes, hombres, mujeres;
 
@@ -154,7 +154,7 @@ public class Ejercicios {
         }
         System.out.println("Verfique los datos ingresados");
     }
-    public void Ejercicio7(){
+    private void Ejercicio7(){
         Scanner teclado = new Scanner(System.in);
         double metro;
 
@@ -171,7 +171,7 @@ public class Ejercicios {
         System.out.println(pulgadas+" pulgadas");
         System.out.println(pies+" pies");
     }
-    public void Ejercicio8(){
+    private void Ejercicio8(){
         Scanner teclado = new Scanner(System.in);
 
         //Ingreso de medidas
@@ -195,7 +195,7 @@ public class Ejercicios {
 
         System.out.println("El area del triangulo es de " + df.format(area));
     }
-    public void Ejercicio9(){
+    private void Ejercicio9(){
         Scanner teclado = new Scanner(System.in);
         double precio_hora = 5.532;
         int horas;
@@ -214,7 +214,7 @@ public class Ejercicios {
 
         System.out.println("El sueldo neto del empleado es de "+sueldo_neto);
     }
-    public void Ejercicio10(){
+    private void Ejercicio10(){
         Scanner teclado = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("#.00");
 
@@ -353,7 +353,7 @@ public class Ejercicios {
 
         }
     }
-    public void Ejercicio11(){
+    private void Ejercicio11(){
         Scanner teclado = new Scanner(System.in);
 
         //Ingreso de informacion
@@ -411,7 +411,7 @@ public class Ejercicios {
         System.out.println("SUELDO NETO");
         System.out.println(sueldo_neto);
     }
-    public void Ejercicio12(){
+    private void Ejercicio12(){
         Scanner teclado = new Scanner(System.in);
         double matematica;
         double fisica;
@@ -485,7 +485,7 @@ public class Ejercicios {
         System.out.println("==========================");
         System.out.println("PROMEDIO FINAL: "+promedio_final);
     }
-    public void Ejercicio13(){
+    private void Ejercicio13(){
         Scanner teclado = new Scanner(System.in);
         int ncincuentamil;
         int nveintemil;
@@ -532,7 +532,7 @@ public class Ejercicios {
         System.out.println(total);
 
     }
-    public void Ejercicio14(){
+    private void Ejercicio14(){
         float c, e, b, f, a, d;
         Scanner teclado = new Scanner(System.in);
 
@@ -575,7 +575,7 @@ public class Ejercicios {
             System.out.println("No se puede dividir entre 0");
         }
     }
-    public void Ejercicio15(){
+    private void Ejercicio15(){
         int ant_lectura;
         int act_lectura;
         int kwh;
@@ -598,7 +598,7 @@ public class Ejercicios {
             System.out.println("Revise los valores de lectura ingresados");
         }
     }
-    public void Ejercicio16(){
+    private void Ejercicio16(){
         Scanner teclado = new Scanner(System.in);
         double largo = 4;
         double ancho = 1.5;
@@ -624,7 +624,7 @@ public class Ejercicios {
             System.out.println("Verfique los valores ingresados");
         }
     }
-    public void Ejercicio17(){
+    private void Ejercicio17(){
         Scanner teclado=new Scanner(System.in);
         double precio_final;
         double precio_venta;
@@ -651,7 +651,7 @@ public class Ejercicios {
             System.out.println("El precio de compra debe ser menor que el valor de venta para calcular el descuento");
         }
     }
-    public void Ejercicio18(){
+    private void Ejercicio18(){
         Scanner teclado = new Scanner(System.in);
         double galon =3.785;
         double litro=1/galon;
@@ -672,7 +672,7 @@ public class Ejercicios {
         System.out.println("=============================");
         System.out.println("El precio es de: "+(dc.format(precio_venta)));
     }
-    public void Ejercicio19(){
+    private void Ejercicio19(){
         int presupuesto;
         Scanner teclado = new Scanner(System.in);
 
@@ -692,7 +692,7 @@ public class Ejercicios {
         System.out.println("Presupuesto Traumatologia: " + traumatologia);
         System.out.println("Presupuesto Pediatria: " + pediatria);
     }
-    public void Ejercicio20(){
+    private void Ejercicio20(){
         Scanner teclado=new Scanner(System.in);
 
         System.out.println("CALCULO DE INTERESES HIPOTECA");
@@ -712,7 +712,7 @@ public class Ejercicios {
         System.out.println("Los intereses anuales fueron de: ");
         System.out.println(dc.format(razon)+"%");
     }
-    public void Ejercicio21(){
+    private void Ejercicio21(){
         Scanner teclado = new Scanner(System.in);
 
         //lote
@@ -739,7 +739,7 @@ public class Ejercicios {
         System.out.println("El porcentaje de ganancia es de: ");
         System.out.println(dc.format(porcentaje_ganancia)+"%");
     }
-    public void Ejercicio22(){
+    private void Ejercicio22(){
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("RECARGO PAGO CUOTAS");
@@ -760,7 +760,7 @@ public class Ejercicios {
         System.out.println("Porcentaje de recargo");
         System.out.println(dc.format(por_recargo)+"%");
     }
-    public void Ejercicio23(){
+    private void Ejercicio23(){
         Scanner teclado = new Scanner(System.in);
 
 
@@ -798,7 +798,7 @@ public class Ejercicios {
         System.out.println("PRECIO TOTAL");
         System.out.println(total);
     }
-    public void Ejercicio24(){
+    private void Ejercicio24(){
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("GANANCIA INTERESES");
@@ -820,7 +820,7 @@ public class Ejercicios {
             System.out.println("Ganancias por debajo de 7000");
         }
     }
-    public void Ejercicio25(){
+    private void Ejercicio25(){
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("AUMENTO SALARIO");
@@ -841,7 +841,7 @@ public class Ejercicios {
             System.out.println(dc.format(aumento));
         }
     }
-    public void Ejercicio26(){
+    private void Ejercicio26(){
         Scanner t = new Scanner(System.in);
 
         System.out.println("EXPRESIÓN");
@@ -870,7 +870,7 @@ public class Ejercicios {
             System.out.println("los Valores de D no pueden ser negativos");
         }
     }
-    public void Ejercicio27(){
+    private void Ejercicio27(){
         Scanner t = new Scanner(System.in);
 
         System.out.println("FIGURAS");
@@ -899,7 +899,7 @@ public class Ejercicios {
             System.out.println("La figura no es valida");
         }
     }
-    public void Ejercicio28(){
+    private void Ejercicio28(){
         Scanner t = new Scanner(System.in);
 
         System.out.println("Ingrese monto total de la compra");
@@ -927,7 +927,7 @@ public class Ejercicios {
             System.out.println("Intereses crefito fabricante = " + interes);
         }
     }
-    public void Ejercicio29(){
+    private void Ejercicio29(){
         Scanner t = new Scanner(System.in);
 
         System.out.println("Salario de lo vendedores");
@@ -958,7 +958,7 @@ public class Ejercicios {
             System.out.println(vendedor[i]);
         }
     }
-    public void Ejercicio30(){
+    private void Ejercicio30(){
         Scanner t = new Scanner(System.in);
 
         System.out.println("Ingrese un numero entero");
@@ -986,7 +986,7 @@ public class Ejercicios {
             i++;
         }
     }
-    public void Ejercicio31(){
+    private void Ejercicio31(){
         Scanner t = new Scanner(System.in);
 
         System.out.println("COSTO ALQUILER");
@@ -1014,7 +1014,7 @@ public class Ejercicios {
             System.out.println(precio_extra);
         }
     }
-    public void Ejercicio32(){
+    private void Ejercicio32(){
         Scanner t = new Scanner(System.in);
         System.out.println("Ingrese el valor de P");
         int p = t.nextInt();
@@ -1031,7 +1031,7 @@ public class Ejercicios {
             System.out.println(p + "³" + "+" + q + "⁴" + "-2*" + p + "²" + " < 680");
         }
     }
-    public void Ejercicio33(){
+    private void Ejercicio33(){
         Scanner t = new Scanner(System.in);
         System.out.println("Nombre del cliente");
         String nombre = t.nextLine();
@@ -1088,7 +1088,7 @@ public class Ejercicios {
             System.out.println(mnt_descuento);
         }
     }
-    public void Ejercicio34(){
+    private void Ejercicio34(){
         Scanner t = new Scanner(System.in);
 
         System.out.println("Ingrese el sueldo del empleado");
@@ -1126,7 +1126,7 @@ public class Ejercicios {
                 System.out.println("Categoría incorrecta");
         }
     }
-    public void Ejercicio35(){
+    private void Ejercicio35(){
         Scanner t = new Scanner(System.in);
 
         //temperatura
@@ -1150,7 +1150,7 @@ public class Ejercicios {
             System.out.println("Puede practicar Marcha");
         }
     }
-    public void Ejercicio36(){
+    private void Ejercicio36(){
         Scanner t = new Scanner(System.in);
         System.out.println("Ingrese un cantidad de dinero");
         int dinero = t.nextInt();
@@ -1213,7 +1213,7 @@ public class Ejercicios {
             System.out.println(dz + " de 10");
         }
     }
-    public void Ejercicio37(){
+    private void Ejercicio37(){
         Scanner t = new Scanner(System.in);
 
         System.out.println("Escriba el valor de A");
@@ -1246,7 +1246,7 @@ public class Ejercicios {
             System.out.println("Los datos ingresado no corresponden a un triangulo");
         }
     }
-    public void Ejercicio38(){
+    private void Ejercicio38(){
         Scanner t = new Scanner(System.in);
         LocalDate hoy = LocalDate.now();
 
@@ -1334,7 +1334,7 @@ public class Ejercicios {
             System.out.println("Dia incorrecto");
         }
     }
-    public void Ejercicio39(){
+    private void Ejercicio39(){
         Scanner t = new Scanner(System.in);
 
 
@@ -1364,7 +1364,7 @@ public class Ejercicios {
             System.out.println("Valor terrno "+total_ter);
         }
     }
-    public void Ejercicio40(){
+    private void Ejercicio40(){
         Scanner t = new Scanner(System.in);
 
 
@@ -1401,7 +1401,7 @@ public class Ejercicios {
             System.out.println("Verifique los valores ingresados");
         }
     }
-    public void Ejercicio41(){
+    private void Ejercicio41(){
         Scanner t = new Scanner(System.in);
 
         System.out.println("REFORESTACION");
@@ -1435,7 +1435,7 @@ public class Ejercicios {
         System.out.println("Cedro " + cedro);
 
     }
-    public void Ejercicio42(){
+    private void Ejercicio42(){
         Scanner t = new Scanner(System.in);
         System.out.println("Nivel de hemoglobina");
         double hmg = t.nextInt();
@@ -1493,7 +1493,7 @@ public class Ejercicios {
         //Resultado final
         System.out.println(anemia);
     }
-    public void Ejercicio43(){
+    private void Ejercicio43(){
         Scanner t = new Scanner(System.in);
 
         System.out.println("Ingrese el monto del capital actual");
@@ -1523,7 +1523,7 @@ public class Ejercicios {
         System.out.println("Los incentivos saran de "+incentivos);
 
     }
-    public void Ejercicio44(){
+    private void Ejercicio44(){
         Scanner t = new Scanner(System.in);
         System.out.println("Valor de la inversion requerida");
         double inversion_total = t.nextDouble();
@@ -1551,7 +1551,7 @@ public class Ejercicios {
             System.out.printf("La inversion del socio debera ser %.0f\n",socio);
         }
     }
-    public void Ejercicio45(){
+    private void Ejercicio45(){
         Scanner t = new Scanner(System.in);
 
         System.out.println("Ingrese el valor de A");
@@ -1580,4 +1580,51 @@ public class Ejercicios {
             System.out.println("No hay soluciones en los reales");
         }
     }
+    //Getters
+    public void getEjercicio1() { Ejercicio1(); }
+    public void getEjercicio2() { Ejercicio2(); }
+    public void getEjercicio3() { Ejercicio3(); }
+    public void getEjercicio4() { Ejercicio4(); }
+    public void getEjercicio5() { Ejercicio5(); }
+    public void getEjercicio6() { Ejercicio6(); }
+    public void getEjercicio7() { Ejercicio7(); }
+    public void getEjercicio8() { Ejercicio8(); }
+    public void getEjercicio9() { Ejercicio9(); }
+    public void getEjercicio10() { Ejercicio10(); }
+    public void getEjercicio11() { Ejercicio11(); }
+    public void getEjercicio12() { Ejercicio12(); }
+    public void getEjercicio13() { Ejercicio13(); }
+    public void getEjercicio14() { Ejercicio14(); }
+    public void getEjercicio15() { Ejercicio15(); }
+    public void getEjercicio16() { Ejercicio16(); }
+    public void getEjercicio17() { Ejercicio17(); }
+    public void getEjercicio18() { Ejercicio18(); }
+    public void getEjercicio19() { Ejercicio19(); }
+    public void getEjercicio20() { Ejercicio20(); }
+    public void getEjercicio21() { Ejercicio21(); }
+    public void getEjercicio22() { Ejercicio22(); }
+    public void getEjercicio23() { Ejercicio23(); }
+    public void getEjercicio24() { Ejercicio24(); }
+    public void getEjercicio25() { Ejercicio25(); }
+    public void getEjercicio26() { Ejercicio26(); }
+    public void getEjercicio27() { Ejercicio27(); }
+    public void getEjercicio28() { Ejercicio28(); }
+    public void getEjercicio29() { Ejercicio29(); }
+    public void getEjercicio30() { Ejercicio30(); }
+    public void getEjercicio31() { Ejercicio31(); }
+    public void getEjercicio32() { Ejercicio32(); }
+    public void getEjercicio33() { Ejercicio33(); }
+    public void getEjercicio34() { Ejercicio34(); }
+    public void getEjercicio35() { Ejercicio35(); }
+    public void getEjercicio36() { Ejercicio36(); }
+    public void getEjercicio37() { Ejercicio37(); }
+    public void getEjercicio38() { Ejercicio38(); }
+    public void getEjercicio39() { Ejercicio39(); }
+    public void getEjercicio40() { Ejercicio40(); }
+    public void getEjercicio41() { Ejercicio41(); }
+    public void getEjercicio42() { Ejercicio42(); }
+    public void getEjercicio43() { Ejercicio43(); }
+    public void getEjercicio44() { Ejercicio44(); }
+    public void getEjercicio45() { Ejercicio45(); }
 }
+
