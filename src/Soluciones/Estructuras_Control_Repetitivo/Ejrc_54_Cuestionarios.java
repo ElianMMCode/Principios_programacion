@@ -21,8 +21,6 @@ public class Ejrc_54_Cuestionarios {
                 if (cuestionarios[i][j]<1 || cuestionarios[i][j]>5){
                     System.out.println("Los valores deben estar entre 1 a 5");
                     break;
-                }else{
-                    System.out.println("Verifique los valores ingresados");
                 }
             }
         }
