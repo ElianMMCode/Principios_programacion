@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ejrc_58_Intereses {
 
-    public static double capital_total(double capital, int t_interes, int semanas){
+    private static double capital_total(double capital, int t_interes, int semanas){
         return ((capital*(((double) t_interes/100))/365)*((double) semanas*7));
     }
 

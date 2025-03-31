@@ -1581,7 +1581,9 @@ public class Ejercicios {
         }
     }
     //Getters
-    public void getEjercicio1() { Ejercicio1(); }
+    public void getEjercicio1() {
+        Ejercicio1();
+    }
     public void getEjercicio2() { Ejercicio2(); }
     public void getEjercicio3() { Ejercicio3(); }
     public void getEjercicio4() { Ejercicio4(); }
