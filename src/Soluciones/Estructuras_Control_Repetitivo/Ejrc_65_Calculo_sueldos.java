@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class Ejrc_65_Calculo_sueldos {
     public static void main() {
-        Scanner sc = new Scanner(System.in);
+        Scanner t = new Scanner(System.in);
 
         String nombre, cedula, tipoEmpleado;
         int hijos, diasAsistidos;
         double sueldoBasico;
 
         System.out.print("Nombre del empleado: ");
-        nombre = sc.nextLine();
+        nombre = t.nextLine();
 
         System.out.print("Cédula del empleado: ");
-        cedula = sc.nextLine();
+        cedula = t.nextLine();
 
         System.out.print("Tipo de empleado (obrero/administrativo/ejecutivo): ");
-        tipoEmpleado = sc.nextLine().toLowerCase();
+        tipoEmpleado = t.nextLine().toLowerCase();
 
         switch (tipoEmpleado) {
             case "obrero":
@@ -35,11 +35,11 @@ public class Ejrc_65_Calculo_sueldos {
         }
 
         System.out.print("Cantidad de hijos (máximo 5): ");
-        hijos = sc.nextInt();
+        hijos = t.nextInt();
         if (hijos > 5) hijos = 5;  // máximo 5 hijos
 
         System.out.print("Días asistidos este mes (de 30): ");
-        diasAsistidos = sc.nextInt();
+        diasAsistidos = t.nextInt();
 
         // --- ASIGNACIONES ---
         double aportePorHijos = hijos * (0.10 * sueldoBasico);

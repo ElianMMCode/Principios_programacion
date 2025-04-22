@@ -1,40 +1,30 @@
 package Soluciones.Estructuras_Control_Repetitivo;
 
 public class Ejrc_69 {
-    public static int esDivisor (int x, int y){
+    public static int sumaDivisores(int x) {
         int suma = 0;
-        for(int i =1; suma<y; i++) {
-            if(x%i==0){
-                suma+=i;
+        for (int i =1; i < x ; i++) {
+            if (x % i == 0) {
+                suma += i;
             }
         }
-        return(suma);
+
+        return (suma);
     }
     public static void main (){
-            int a = 220;
-            int b = 284;
-            int par_a;
-            int par_b;
+            int a = 1;
             int pares = 0;
 
-            while (pares<4){
 
-                if(esDivisor(a,b)==b&&esDivisor(b,a)==a){
+            while (pares<5){
+                int b = sumaDivisores(a);//284
+                int suma_divisores_b = sumaDivisores(b);//220
+                if (suma_divisores_b == a && a != b){
+                    System.out.println(a+" | "+b);
                     pares++;
-                    par_a=esDivisor(a,b);
-                    par_b=esDivisor(b,a);
-                    System.out.println("Son amigos "+par_a+" "+par_b);
                 }
-                a+=1;
-                b+=1;
-
-
+                a++;
             }
-
-
-
     }
-
-
 
 }

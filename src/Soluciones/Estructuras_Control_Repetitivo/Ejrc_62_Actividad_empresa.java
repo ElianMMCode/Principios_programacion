@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Ejrc_62_Actividad_empresa {
         public static void main(){
-            Scanner sc = new Scanner(System.in);
+            Scanner t = new Scanner(System.in);
 
             int NUM_ACTIVIDADES = 5;
             int NUM_LOCALIZACIONES = 4;
@@ -23,13 +23,13 @@ public class Ejrc_62_Actividad_empresa {
                 System.out.println("\nIngrese datos de la empresa:");
 
                 System.out.print("Actividad (1=Agro, 2=Ind, 3=Min, 4=Pesq, 5=Otra): ");
-                int actividad = sc.nextInt();
+                int actividad = t.nextInt();
 
                 System.out.print("Localización (1=Norte, 2=Sur, 3=Este, 4=Oeste): ");
-                int localizacion = sc.nextInt();
+                int localizacion = t.nextInt();
 
                 System.out.print("Número de trabajadores: ");
-                int trabajadores = sc.nextInt();
+                int trabajadores = t.nextInt();
 
                 totalEmpresas++;
 
@@ -56,7 +56,7 @@ public class Ejrc_62_Actividad_empresa {
                 }
 
                 System.out.print("¿Desea ingresar otra empresa? (s/n): ");
-                continuar = sc.next();
+                continuar = t.next();
             } while (continuar.equalsIgnoreCase("s"));
 
             System.out.println("\n--- Resultados ---");
